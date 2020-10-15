@@ -1,38 +1,266 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Navbar */
+.nav-item {
+  padding-left: 20px;
+}
+.nav-link{
+  color: #474747 !important;
+  transition: .5s;
+}
+.nav-link:hover{
+  font-weight: 600;
+}
+.loginLink{
+  color: #ffffff !important;
+}
+
+/* Header */
+.header-container{
+  position: relative;
+  background: #FBD062;
+  width: 100%;
+  height: 120vh;
+}
+.header-container::before{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 180px;
+  bottom: 0;
+  left: 0;
+  background: #ffffff;
+  clip-path: polygon(100% 0,0 100%,100% 100%);
+}
+/* HeaderMain */
+.header-text h1{
+  font-weight: 700;
+  color: #111430;
+  font-size: 48px;
+}
+.header-text p{
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  margin-top: 25px;
+  margin-bottom: 35px;
+}
+.btn-brand{
+  background: #111430;
+  color: #ffffff;
+  border: none;
+  outline: none !important;
+  padding: 9px 40px;
+  border-radius: 5px;
+}
+
+/* Clients */
+.clients{
+  margin-left: 140px;
+  margin-top: 100px;
+}
+.clients img{
+  max-width: 100%;
+  height: 40px;
+}
+.clients .clientImg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Services */
+.service-card{
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  flex:31.333333%; 
+  margin: 0 10px;
+  margin-top: 60px;
+}
+.service-img {
+  overflow: hidden;
+  width: 74px;
+  border-radius: 100px;
+  margin: 0 auto;
+}
+.service-img img{
+  max-width: 100%;
+  -moz-transition: ease all 0.35s;
+  -o-transition: ease all 0.35s;
+  -webkit-transition: ease all 0.35s;
+  transition: ease all 0.35s;
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.service-img:hover.service-img img {
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+/* Portfolio */
+.portfolio-container{
+  background: #111430;
+  margin-top: 150px;
+  padding: 80px 0;
+}
+.portfolio-container h2{
+  color: #ffffff;
+  font-size: 34px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/* Feedback */
+.feedback{
+  margin-top: 100px; 
+}
+.feedback h2{
+  margin-bottom: 60px;
+  font-size: 36px;
+  font-weight: 600;
+  color: #171B4E;
+  text-align: center;
+}
+.feedback-item{
+  border: 1px solid #BFBFBF;
+  padding: 30px;
+  border-radius: 5px;
+}
+.feedback-carousel button.owl-dot{
+  display: none !important;
+}
+
+/* Contact */
+.contact-area{
+  background: #FBD062;
+  margin-top: 150px;
+  padding-top: 80px;
+  padding-bottom: 25px;
+}
+.contact-leftSide{
+  padding-right: 80px;
+}
+.contact-header{
+  font-weight: 700;
+  font-size: 34px;
+  color: #2D2D2D;
+  margin-bottom: 30px;
+}
+.contact-leftSide p{
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.396px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.contact-form input,.contact-form textarea{
+  padding: 25px;
+}
+.contact-form input[type="submit"]{
+  padding: 10px 50px;
+}
+.copyright-text{
+  font-weight: 300;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.7);
+  padding-top: 150px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* =========== Login ============ */
+.login-container{
+  height: 100vh;
+}
+.login-container h4{
+  text-align: center;
+  padding-bottom: 15px;
+}
+.loginPage-logo{
+  margin-top: 50px;
+  width: 300px;
+  margin-left: 480px;
+}
+.login-content{
+  background-color: #ffffff;
+  padding: 100px 30px;
+  margin-top: 70px;
+  border: 1px solid #cec9c9;
+  border-radius: 5px;
+}
+.login-content p{
+  text-align: center;
+  padding-top: 10px;
+  font-size: 15px;
+}
+.login-content p span{
+  color: #ff11ff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.google-login{
+  border: 2px solid #f1f1f1;
+  padding: 8px 10px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.google-login .google-icon{
+  font-size: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* sidebar */
+.sidebar{
+  background-image: linear-gradient(40deg, #19d3ae,#0fcfec);
+  position: fixed;
+}
+.sidebar li{
+  margin-bottom: 2em;
+}
+.sidebar li:hover span{
+  display: inline-block;
+  transform: translate(5px);
+  text-decoration: none;
+}
+.sidebar svg{
+  margin-right: 5px;
+  font-size: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* service list card */
+.containerStyle{
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 50px;
+}
+.service-list-card{
+  flex: 0 0 30.333333%;
+  margin: 20px 10px;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 25px;
+}
+.service-list-card .status{
+  margin-top: 10px;
+  background: #C6FFE0;
+  color: #009444;
+  padding: 5px 20px;
+  height: 38px;
+  border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.serviceTable{
+    background: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 10px;
 }

@@ -1,0 +1,35 @@
+@media (max-width: 1199px ){
+    .service-card{
+        flex:30.333333%; 
+    }
+}
+@media (max-width: 991px ){
+    .header-text{
+        margin-left: 30px;
+    }
+    .contact-leftSide p{
+        margin-bottom: 30px;
+    }
+    .clients {
+        margin-left: 8.5%;
+    }
+}
+@media (max-width: 767px ){
+    .headerImg{
+        display: none;
+    }
+    .header-container{
+        height: 100vh;
+    }
+    .service-card{
+        flex: 100%; 
+    }
+    .clients .clientImg {
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 576px ){
+    .clients {
+        margin-left: -15px;
+    }
+}
