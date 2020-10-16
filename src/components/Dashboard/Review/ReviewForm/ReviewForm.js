@@ -24,7 +24,7 @@ const ReviewForm = () => {
     }
 
     return (
-        <div className="col-md-6">
+        <div className="col-md-8 col-lg-6">
             <form onSubmit={handleSubmit}>
                 <div class="form-group">
                     <input type="text" onBlur={handleBlur} className="form-control" placeholder="Your name" name="name"/>

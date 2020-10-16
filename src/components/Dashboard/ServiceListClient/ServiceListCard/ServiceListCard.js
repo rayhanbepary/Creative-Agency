@@ -2,7 +2,7 @@ import React from 'react';
 
 const ServiceListCard = ({service}) => {
     return (
-        <div className="col-md-4 service-list-card">
+        <div className="col-lg-4 col-md-6 service-list-card">
             <div className="text-right d-flex mb-2">
                 <div style={{width: '0',marginRight: 'auto'}}>
                     <img style={{height: '60px'}} src={`data:image/jpeg;base64,${service.serviceIcon}`} alt=""/>

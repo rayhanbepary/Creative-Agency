@@ -29,12 +29,12 @@ const Login = () => {
         <div className="login-container">
             <div className="container">
                 <div className="row">
-                    <div className="loginPage-logo">
+                    <div className="loginPage-logo text-center">
                         <img src={Logo} style={{width: "150px",height: '50px'}} alt="logo"/>
                     </div>
                 </div>
                 <div className="row">
-                    <div className="col-lg-4 offset-lg-4 login-content">
+                    <div className="col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-4 offset-lg-4 login-content">
                         <h4>Login with</h4>
                         <div className="google-login" onClick={googleSignIn}>
                             <FcGoogle className="google-icon"/>

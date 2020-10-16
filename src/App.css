@@ -186,8 +186,7 @@
 }
 .loginPage-logo{
   margin-top: 50px;
-  width: 300px;
-  margin-left: 480px;
+  width: 100%;
 }
 .login-content{
   background-color: #ffffff;
@@ -212,6 +211,9 @@
   border-radius: 50px;
   cursor: pointer;
 }
+.google-login span{
+  padding-left: 40px;
+}
 .google-login .google-icon{
   font-size: 30px;
 }
@@ -220,6 +222,19 @@
 .sidebar{
   background-image: linear-gradient(40deg, #19d3ae,#0fcfec);
   position: fixed;
+  height: 100vh;
+  padding: 40px;
+}
+.sidebar .logo{
+  width: 129px;
+  margin-bottom: 40px;
+}
+.navbar-expand-lg .sidebar-nav {
+  flex-direction: column;
+  padding: 0;
+}
+.main-nav{
+  display: block;
 }
 .sidebar li{
   margin-bottom: 2em;
@@ -241,12 +256,21 @@
   margin: 0;
   padding-bottom: 50px;
 }
+.DashboardPageName{
+  font-size: 34px;
+  font-weight: bold;
+}
 .service-list-card{
   flex: 0 0 30.333333%;
   margin: 20px 10px;
   background: #ffffff;
   border-radius: 10px;
   padding: 25px;
+}
+.serviceHeaderText{
+  width: 200px; 
+  margin-right: auto;
+  margin-left: -20px;
 }
 .service-list-card .status{
   margin-top: 10px;
@@ -256,11 +280,17 @@
   height: 38px;
   border-radius: 5px;
 }
-
-
 .serviceTable{
     background: white;
     padding-top: 20px;
     padding-bottom: 20px;
     border-radius: 10px;
+}
+
+/* AddService */
+.formBlock{
+  display: flex;
+}
+.inputRight{
+  padding-left: 20px;
 }

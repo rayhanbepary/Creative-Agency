@@ -42,42 +42,42 @@ const AddService = () => {
         <div className="serviceListAdmin-container">
         <div className="containerStyle container-fluid">
             <div className="row">
-                <div className="col-md-2" style={{paddingLeft: '0'}}>
+                <div className="col-md-12 col-lg-2" style={{paddingLeft: '0'}}>
                     <Sidebar></Sidebar>
                 </div>
             </div>
 
             <div className="row" style={{marginRight: '0',marginLeft: '0'}}>
-                <div className="text-right col-md-10 offset-md-2 py-2 d-flex">
+                <div className="text-right col-md-12 col-lg-10 offset-lg-2 py-2 d-flex">
                     <div style={{width: "300px", marginRight: 'auto',marginLeft: '-100px'}}>
-                        <span style={{fontSize:'34px', fontWeight:'bold'}}>Add Services</span>
+                        <span className="DashboardPageName">Add Services</span>
                     </div>
                     <img src={loggedInUser.image} alt="" style={{height: "30px",marginRight: '10px',marginTop: '10px',borderRadius: '100px'}}/>
-                    <span style={{marginRight: '40px',marginTop: '10px'}}>{loggedInUser.name}</span>
+                    <span className="userName" style={{marginRight: '40px',marginTop: '10px'}}>{loggedInUser.name}</span>
                 </div>
             </div>
 
             <div className="row" style={{marginRight: '0',marginLeft: '0'}}>
-                <div className="col-md-10 offset-md-2" style={{background: '#F4FDFB',paddingBottom: '80px', paddingTop: '50px'}}>
+                <div className="col-md-12 col-lg-10 offset-lg-2" style={{background: '#F4FDFB',paddingBottom: '80px', paddingTop: '50px'}}>
 
-                    <div className="col-md-8" style={{background: '#ffffff',padding: '40px 30px',borderRadius: '10px'}}>
+                    <div className="col-md-12 col-lg-8" style={{background: '#ffffff',padding: '40px 30px',borderRadius: '10px'}}>
                         <form onSubmit={handleSubmit}>
-                            <div class="form-group d-flex">
-                                <div className="col-md-6" style={{padding: '0'}}>
+                            <div class="form-group formBlock">
+                                <div className="col-md-6 col-sm-8" style={{padding: '0'}}>
                                     <input type="text" onBlur={handleBlur} name="title" id="title" className="form-control" placeholder="Enter title"/>
                                 </div>
                                 
-                                <div className="col-md-3"style={{paddingLeft: '20px'}}>
+                                <div className="col-md-3 inputRight">
                                     <input type="file" onChange={handleFileChange} id="icon" className="form-control-file"/>
                                 </div>
                             </div>
-                            <div className="form-group d-flex">
+                            <div className="form-group formBlock">
 
-                                <div className="col-md-9"style={{padding: '0'}}>
+                                <div className="col-md-9 col-sm-9"style={{padding: '0'}}>
                                     <textarea name="description" onBlur={handleBlur} id="description" cols="30" rows="5" className="form-control" placeholder="Enter Description"></textarea>
                                 </div>
 
-                                <div className="col-md-3"style={{paddingLeft: '20px'}}>
+                                <div className="col-md-3 inputRight">
                                     <select class="form-control" onBlur={handleBlur} name="status">
                                         <option selected>Done</option>
                                         <option>On going</option>

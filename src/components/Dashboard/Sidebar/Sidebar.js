@@ -28,11 +28,96 @@ const Sidebar = () => {
 
 
     return (
-        <div className="sidebar d-flex flex-column justify-content-between py-5 px-5" style={{height:"100vh"}}>
-            <div>
-                <img src={Logo} alt="" style={{width: '129px',marginBottom: '40px'}}/>
+        <div className="sidebar d-flex flex-column justify-content-between">
+            <div className="sidebarFlex" >
 
-                <ul className="list-unstyled">
+                <nav className="navbar main-nav col-md-12 navbar-expand-lg navbar-light" style={{padding: '0'}}>
+
+                    <Link to="/" className="navbar-brand">
+                        <img src={Logo} alt="logo" className="logo"/>
+                    </Link>
+
+                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+                    
+                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul className="navbar-nav sidebar-nav">
+                             <li>
+                                <Link to="/" className="text-white" style={{textDecoration: "none"}}>
+                                    <AiOutlineHome/> <span>Home</span>
+                                </Link>
+                            </li>
+                            
+                            {
+                                isAdmin ? <div>
+                                    <li>
+                                        <Link to="/admin/serviceList" className="text-white" style={{textDecoration: "none"}}>
+                                            <HiOutlineClipboardList/> <span>Service List</span>
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/admin/addService" className="text-white" style={{textDecoration: "none"}}>
+                                            <AiOutlinePlus/> <span>Add Service</span>
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/admin/makeAdmin" className="text-white" style={{textDecoration: "none"}}>
+                                            <BiUserPlus/> <span>Make Admin</span>
+                                        </Link>
+                                    </li>
+                                </div> 
+                                :
+                                <div>
+                                    <li>
+                                        <Link to="/service/order" className="text-white" style={{textDecoration: "none"}}>
+                                            <BiCart/> <span>Order</span>
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/service/serviceList" className="text-white" style={{textDecoration: "none"}}>
+                                            <HiOutlineClipboardList /> <span>Service List</span>
+                                        </Link>
+                                    </li>
+
+                                    <li>
+                                        <Link to="/service/review" className="text-white" style={{textDecoration: "none"}}>
+                                            <BiMessageDots/> <span>Review</span>
+                                        </Link>
+                                    </li>
+                                </div>
+                            }
+
+                        </ul>
+                    </div>
+                </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                {/* <ul className="list-unstyled">
                     <li>
                         <Link to="/" className="text-white" style={{textDecoration: "none"}}>
                             <AiOutlineHome/> <span>Home</span>
@@ -78,7 +163,7 @@ const Sidebar = () => {
                         </div>
                     }
 
-                </ul>
+                </ul> */}
 
             </div>
         </div>
