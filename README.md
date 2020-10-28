@@ -1,7 +1,7 @@
 ![logo](https://www.linkpicture.com/q/logo_166.png)
 
 ##
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here',
+it has been developed for practicing purpose. It is a full stack project.this application is a service selling application. client can select any service and order it. and can give review.
 
 [Live Website](https://creative-agency-6b145.web.app/)
 
@@ -25,20 +25,13 @@ It is a long established fact that a reader will be distracted by the readable c
 * React
 * CSS3
 * Bootstrap
+* react-bootstrap
+* react-icons
+* react-owl-carousel
+* react-router-dom
 * Node JS
 * Mongodb
 * Express JS
 * Firebase
 * Heroku
-
-### Dependency
-* bootstrap
-* firebase
-* react
-* react-bootstrap
-* react-dom
-* react-icons
-* react-owl-carousel
-* react-router-dom
-* react-scripts
 
