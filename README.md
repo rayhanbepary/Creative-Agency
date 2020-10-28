@@ -1,9 +1,6 @@
 
-Login with this email address as an admin [programming.hero.instructor@gmail.com]
 
-
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Live Website](https://creative-agency-6b145.web.app/).
 
 ## Available Scripts
 
